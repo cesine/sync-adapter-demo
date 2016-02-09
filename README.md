@@ -6,3 +6,6 @@ The aim here is to demonstrate how to use a sync adapter with stubbed out conten
 and accounts, and also to show how to unit test the sync logic within the JVM.
 
 We use Realm to handle the persistence layer, rather than using a content provider.
+
+
+Check out the [slide deck for more info](https://github.com/benoberkfell/sync-adapter-demo/blob/master/Sync%20Adapters.pptx)
