@@ -118,8 +118,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onPause() {
         messagesSubscription.unsubscribe();
-        realm.close();
         super.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        realm.close();
+        super.onDestroy();
     }
 
     public void requestPeriodicSync() {
